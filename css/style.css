@@ -1,0 +1,345 @@
+@charset "UTF-8";
+
+html {
+  font-size: 100%;
+}
+
+body {
+  font-family: "Yu Gothic Medium", "游ゴシック Medium", "YuGothic",
+    "游ゴシック体", "ヒラギノ角 Pro W3", sans-serif;
+  line-height: 1.7;
+  color: #432;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+.big-bg{
+    background-size: cover;
+    background-position: center top;
+}
+
+#home{
+    background-image: url(../images/bay.jpg);
+    background-color:rgba(254, 254, 254, 0.86);
+    background-blend-mode: overlay;
+    min-height: 100vh;
+}
+
+#home .page-title{
+    text-transform: none;
+}
+
+/*HEADER*/
+.logo {
+  width: 90px;
+  margin-top: -px;
+}
+
+.wrapper {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 4px;
+}
+
+.main-nav {
+  display: flex;
+  font-size: 1.25rem;
+  text-transform: uppercase;
+  margin-top: 34px;
+  list-style: none;
+}
+
+.main-nav li {
+  margin-left: 36px;
+}
+
+.main-nav a {
+  color: #432;
+}
+
+.main-nav a:hover {
+  color: #0bd;
+}
+
+.page-header {
+  display: flex;
+  justify-content: space-between;
+}
+
+/*Home*/
+.home-content {
+  text-align: center;
+  margin-top: 10%;
+}
+
+.home-content p {
+  font-size: 1.125rem;
+  margin: -60px 0 42px;
+}
+
+.home-content2 {
+  text-align: center;
+  margin-top: 2%;
+}
+
+
+/*見出し*/
+.page-title {
+  font-size: 5rem;
+  font-family: "Philosopher", serif;
+  text-transform: uppercase;
+  font-weight: normal;
+}
+
+footer {
+  background: rgb(37, 25, 10);
+  text-align: center;
+  padding: 26px 0;
+}
+
+footer p {
+  color: rgb(247, 242, 236);
+  font-size: 0.875rem;
+}
+
+.cool-link{
+    margin-right: 5px;
+    display: inline-block;
+}
+
+.cool-link a{
+    text-decoration: none;
+    position: relative;
+    transition: 0.25s ease-in-out;
+    color: #432;
+}
+
+.cool-link:hover a{
+    color:brown;
+}
+
+.cool-link a::before{
+    width: 0;
+    height: 3px;
+    background: rgb(235, 118, 89);
+    position: absolute;
+    bottom: -5px;
+    content: "";
+}
+
+.cool-link.left-to-right:hover a::before{
+    transition: 0.25s ease-in-out;
+    width: 100%;
+    left: 50%;
+    transform: translatex(-50%);
+}
+
+/*introduction*/
+
+#introduction{
+  background-image: url(../images/bay.jpg);
+  background-color:rgba(254, 254, 254, 0.75);
+  background-blend-mode: overlay;
+  height: 270px;
+  margin-bottom: 40px;
+}
+
+#introduction .page-title{
+  text-align: center;
+  margin-top: 0cm;
+}
+
+article{
+  width: 74%;
+}
+
+aside{
+  width: 22%;
+}
+
+.introduction-contents{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 50px;
+}
+
+/*メイン*/
+
+.post-info{
+  position:  relative;
+  padding-top: 4px;
+  margin-top: 40px;
+}
+
+.post-date{
+  background: rgb(248, 210, 175);
+  border-radius: 50%;
+  color: #fff;
+  width: 110px;
+  height: 100px;
+  font-size: 1.625rem;
+  text-align: center;
+  position: absolute;
+  top: 0;
+  padding-top: 10px;
+}
+
+.post-date span{
+  font-size: 1rem;
+  border-top: 1px rgba(255, 255, 255, 0.5) solid;
+  padding-top: 8px;
+  display: block;
+  width: 60%;
+  margin: 0 auto;
+}
+
+.post-title{
+  font-family: "Yu Mincho","YuMincho", serif;
+  font-size: 2rem;
+  font-weight: normal;
+  margin: 0px;
+  border-right: 0px none;
+  border-top:0px solid red;
+  border-bottom:0px solid red;
+  border-left: 3px solid rgb(230, 187, 109);
+  border-radius: 5px;
+}
+
+.post-title{
+  margin-left: 0px;
+  padding-left: 20px;
+}
+
+
+.post-cat{
+  margin-top: 4px;
+  padding-left:20px;
+}
+
+/*サイド*/
+
+.sub-title{
+  font-size: 1.375rem;
+  padding: 0 8px 8px;
+  border-bottom: 2px rgb(255, 208, 164) solid;
+  font-weight: normal;
+}
+
+aside p{
+  padding: 12px 10px;
+}
+
+.sub-menu{
+  margin-bottom: 60px;
+  list-style: none;
+}
+
+.sub-menu li{
+  border-bottom: 0.8px #ddd solid;
+  margin-left: -40.7px;
+}
+
+.sub-menu a{
+  color: #432;
+  padding: 10px;
+  display: block;
+}
+
+.sub-menu a:hover{
+  color: #0bd;
+}
+
+@media(max-width: 600px){
+  h1{
+    color: #0bd;
+  }
+
+}
+
+/*モバイル版*/
+@media (max-width: 600px){
+  .page-title{
+    font-size: 2.5rem;
+  }
+
+  /*HEADER*/
+  .main-nav{
+    font-size:1rem;
+    margin-top: 10px;
+  }
+
+  .main-nav li{
+    margin: 0 20px;
+  }
+
+  .home-content{
+    margin-top: 30px;
+  }
+
+  .page-header{
+    flex-direction: column;
+    align-items:center;
+  }
+
+  .introduction-contents{
+    flex-direction:column;
+  }
+
+  article,
+  aside{
+    width:100%;
+  }
+
+  #introduction .page-title{
+    margin-top: 30px;
+  }
+
+  aside{
+    margin-top: 30px;
+  }
+
+  .post-info{
+    margin-top: 60px;
+  }
+
+ .post-date{
+   width: 70px;
+   height: 70px;
+   font-size: 1rem;
+ }
+
+ .post-date span{
+   font-size: 0.875rem;
+   padding-top: 2px;
+ }
+
+ .post-title{
+   font-size: 1.375em;
+ }
+
+ .post-cat{
+   font-size:0.875rem;
+   margin-top: 10px;
+ }
+ .post-title,
+ .post-cat{
+   margin-left: 80px;
+ }
+}
+
+.page-title-infographics{
+  margin: none;
+  margin-bottom: none;
+  padding: none;
+  height: -100px;
+  font-size: 5rem;
+  font-family: "Philosopher", serif;
+  text-transform: uppercase;
+  font-weight: normal;
+}
